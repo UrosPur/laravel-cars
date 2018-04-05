@@ -20,6 +20,7 @@ class CarsController extends Controller
 
 
         $car = Car::find($id);
+        return view('cars.show',compact(['car']));
 
     }
 
